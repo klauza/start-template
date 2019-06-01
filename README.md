@@ -1,0 +1,1 @@
+# starting template for projects
