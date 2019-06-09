@@ -11,7 +11,27 @@
 </head>
 <body>
 
+  
 <div id="container">
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal popup</h5>
+            </div>
+            <div class="modal-body">
+              Bootstrap from vendor.js is working!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
   <h1>Template for new project</h1>
   <p>Configuration:</p>
   <ul>
@@ -20,6 +40,10 @@
     <li>browser sync</li>
     <li>Sass compiler</li>
     <li>js, css, html minification on production mode</li>
+    <li><button class="btn btn-info my-2">Bootstrap Sass works!</button></li>
+    <li><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+      Test bootstrap JS
+    </button></li>
   </ul>
 
   <p>use <span class="bold">npm install</span> to get all packages</p>
