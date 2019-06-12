@@ -13,6 +13,10 @@ module.exports = {
     path: path.resolve(__dirname, "dist")
   },
 
+  devServer: {
+    port: 4000
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html"
@@ -21,6 +25,7 @@ module.exports = {
 
   module:{
     rules:[
+
       {
         test: /\.scss$/,
         use: [

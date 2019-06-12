@@ -8,9 +8,9 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
-  mode: "production",
+  mode: "production", //production
   entry: {
-    main: "./src/index.js",
+    main: ['@babel/polyfill', './src/index.js'], // ES5+ polyfill
     vendor: "./src/vendor.js"
   },
   output: {
@@ -28,6 +28,10 @@ module.exports = {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
           removeComments: true
+          // removeRedundantAttributes: true,
+          // removeScriptTypeAttributes: true,
+          // removeStyleLinkTypeAttributes: true,
+          // useShortDoctype: true
         }
       }),
     ]
@@ -41,7 +45,12 @@ module.exports = {
   ],
 
   module:{
+
     rules:[
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+      },
       {
         test: /\.scss$/,
         use: [
