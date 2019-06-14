@@ -1,15 +1,18 @@
-import { app } from "./js/app.js"; 
-import { Photos } from "./js/photos.js"; 
 import "./style.scss";
+import { app } from "./js/app.js"; 
 
 app();
 
+async function getUsers(){
+  const response = await fetch('https://api.github.com/users/klauza');
 
-// test, free to delete
-const photos = new Photos();
-
-async function main() {
-  console.log(await photos.getPhotos());
+  const data = await response.json();
+ 
+  return data
 }
+getUsers().then(result => {
+  const avatar = result.avatar_url;
+  console.log(avatar); 
+  document.getElementById('image').setAttribute('src', avatar);
+});
 
-main();

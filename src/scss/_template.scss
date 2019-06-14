@@ -14,6 +14,13 @@
     li{
       list-style: none;
       color: brown;
+      
+      &:nth-last-of-type(1){
+        font-weight: 900;
+      }
+    }
+    button{
+      margin: 0 auto;
     }
   }
 
@@ -26,5 +33,21 @@
 
   .bold{
     font-weight: 900;
+  }
+
+  #image{
+    width: 100px;
+    border: 0px;
+    border-radius: 50%;
+  }
+  .less-width{
+    width: 80px;
+    margin: auto;
+    outline: 1px black solid;
+    outline-offset: 1px;
+  }
+  .less-width a{
+    color: white;
+    text-decoration: none;
   }
 }
