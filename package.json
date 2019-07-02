@@ -1,14 +1,14 @@
 {
   "name": "project-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "template, new-project",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["project-template"],
+  "author": "klauza",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.5",
