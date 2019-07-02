@@ -1,7 +1,8 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require("path");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
@@ -10,7 +11,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 module.exports = {
   mode: "production", //production
   entry: {
-    main: ['@babel/polyfill', './src/index.js'], // ES5+ polyfill
+    main: './src/index.js', 
     vendor: "./src/vendor.js"
   },
   output: {
@@ -25,8 +26,8 @@ module.exports = {
       new HtmlWebpackPlugin({
         template: "./src/index.html",
         minify: {
-          removeAttributeQuotes: true,
-          collapseWhitespace: true,
+          //removeAttributeQuotes: true,
+          //collapseWhitespace: true,
           removeComments: true
           // removeRedundantAttributes: true,
           // removeScriptTypeAttributes: true,
@@ -40,8 +41,8 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({ 
       filename: "[name].[contentHash].css"
-    })
-    //new CleanWebpackPlugin()
+    }),
+    new CleanWebpackPlugin()
   ],
 
   module:{
