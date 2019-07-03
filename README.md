@@ -46,4 +46,4 @@ This is a starting template for new projects. There are several environments con
 ---
 
 ## License
-ISC license
+MIT license
