@@ -7,6 +7,7 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: "production", //production
@@ -42,7 +43,13 @@ module.exports = {
     new MiniCssExtractPlugin({ 
       filename: "[name].[contentHash].css"
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new CopyPlugin([
+      { 
+        from: 'src/favicon.png', 
+        to: './'
+      }
+    ])
   ],
 
   module:{

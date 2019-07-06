@@ -7,7 +7,9 @@
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
-  "keywords": ["project-template"],
+  "keywords": [
+    "project-template"
+  ],
   "author": "klauza",
   "license": "MIT",
   "devDependencies": {
@@ -15,6 +17,7 @@
     "@babel/preset-env": "^7.4.5",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",
     "html-loader": "^0.5.5",
