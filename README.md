@@ -1,22 +1,26 @@
 ## About
-This is a starting template for new projects. There are several environments configured, like file system, webpack, bootstrap, jquery. It has all polyfills and is ES2019 ready.
 
+Several environments are configured: dir tree, webpack, bootstrap and jquery. Contains polyfills and is ES2019 ready. [live website](https://klauza-template.netlify.app/)
 <br/>
+
+<img src="https://user-images.githubusercontent.com/43997053/115117416-541c8c80-9f96-11eb-929c-216ce18e12e8.PNG" width="500">
 
 ---
 
 ## Dependencies
-- ### **main:**
-| Name  | version |
-| ------------- | ------------- |
-| **core-js** | 3.1.4  |
-| **webpack** | 4.0.2  |
-| **webpack-cli** | 3.3.5  |
-| **bootstrap** | 4.3.1  |
-| **jquery** | 3.4.1  |
 
-- ### **others:** 
-@babel/core: (*7.4.5*) -- @babel/preset-env: *7.4.5* -- babel-loader: *8.0.6* -- clean-webpack-plugin: *3.0.0* -- css-loader: *3.0.0* -- file-loader: *4.0.0* -- html-loader: *0.5.5* -- html-webpack-plugin: *3.2.0* -- mini-css-extract-plugin: *0.7.0* -- node-sass: *4.12.0* -- optimize-css-assets-webpack-plugin: *5.0.3* -- popper.js: *1.15.0* -- sass-loader: *7.1.0* -- style-loader: *0.23.1* -- regenerator-runtime: *0.13.2* -- webpack-dev-server: *3.7.2* -- copy-webpack-plugin: *5.0.3*
+- ### **main:**
+
+  | Name            | version |
+  | --------------- | ------- |
+  | **core-js**     | 3.1.4   |
+  | **webpack**     | 4.0.2   |
+  | **webpack-cli** | 3.3.5   |
+  | **bootstrap**   | 4.3.1   |
+  | **jquery**      | 3.4.1   |
+
+- ### **others:**
+  @babel/core: (_7.4.5_) -- @babel/preset-env: _7.4.5_ -- babel-loader: _8.0.6_ -- clean-webpack-plugin: _3.0.0_ -- css-loader: _3.0.0_ -- file-loader: _4.0.0_ -- html-loader: _0.5.5_ -- html-webpack-plugin: _3.2.0_ -- mini-css-extract-plugin: _0.7.0_ -- node-sass: _4.12.0_ -- optimize-css-assets-webpack-plugin: _5.0.3_ -- popper.js: _1.15.0_ -- sass-loader: _7.1.0_ -- style-loader: _0.23.1_ -- regenerator-runtime: _0.13.2_ -- webpack-dev-server: _3.7.2_ -- copy-webpack-plugin: _5.0.3_
 
 **jquery** is in devDependiencies for bootstrap workflow, but also included inline in html file from cdn for global usage
 
@@ -25,20 +29,24 @@ This is a starting template for new projects. There are several environments con
 ---
 
 ## Installation
+
 #### Initial setup
+
+- need to install python 2.7
 - install NodeJS [from here](https://nodejs.org/en/)
 
 #### In main project dir, run:
 
 - `npm install` - gets all the necessary packages for this project
 
-- `npm start` - starts  **local server**, **browser sync**, **sass compiler**
+- `npm start` - starts **local server**, **browser sync**, **sass compiler**
 
 <br/>
 
 ---
 
 ## Deployment
+
 - `npm run build` - builds the application and puts minified files into **/dist** folder.
 
 <br/>
@@ -46,4 +54,5 @@ This is a starting template for new projects. There are several environments con
 ---
 
 ## License
+
 MIT license
